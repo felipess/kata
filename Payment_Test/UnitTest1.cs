@@ -1,4 +1,4 @@
-namespace Payment.Tests
+namespace Payment_Test
 {
     public class UnitTest1
     {

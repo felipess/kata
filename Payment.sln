@@ -3,12 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment", "src/Payment/Payment.csproj", "{7A7AF393-D5FC-47BD-92C1-F6FD2BF90779}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Payments", "src\Payment\Payments.csproj", "{7A7AF393-D5FC-47BD-92C1-F6FD2BF90779}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItens", "SolutionItens", "{8F9A8B52-5938-44E3-904E-2510BACC0FDF}"
 	ProjectSection(SolutionItems) = preProject
-		README.md = src/README.md
+		src\README.md = src\README.md
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FAF6728A-EF5B-47CD-A953-731CFF6EA61B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BB19DB9A-526E-4208-8B73-96B00E2D9FAB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Payments.Tests", "tests\Payment.Tests\Payments.Tests.csproj", "{F89C5946-DD43-4646-97A0-A11C3F5B99CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,9 +26,18 @@ Global
 		{7A7AF393-D5FC-47BD-92C1-F6FD2BF90779}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A7AF393-D5FC-47BD-92C1-F6FD2BF90779}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A7AF393-D5FC-47BD-92C1-F6FD2BF90779}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F89C5946-DD43-4646-97A0-A11C3F5B99CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F89C5946-DD43-4646-97A0-A11C3F5B99CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F89C5946-DD43-4646-97A0-A11C3F5B99CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F89C5946-DD43-4646-97A0-A11C3F5B99CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7A7AF393-D5FC-47BD-92C1-F6FD2BF90779} = {FAF6728A-EF5B-47CD-A953-731CFF6EA61B}
+		{8F9A8B52-5938-44E3-904E-2510BACC0FDF} = {FAF6728A-EF5B-47CD-A953-731CFF6EA61B}
+		{F89C5946-DD43-4646-97A0-A11C3F5B99CC} = {BB19DB9A-526E-4208-8B73-96B00E2D9FAB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BE10D783-F74B-4E69-9EF6-E60C59095C93}
